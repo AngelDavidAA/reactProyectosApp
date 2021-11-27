@@ -14,15 +14,15 @@ function App2() {
       <div className="Container">
        <div className="App">   
         
-        <div className="container">
+        {/* <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                 </div>
             </nav>
-        </div>   
+        </div>    */}
+                <NavLink to="/" className="navbar-brand">Inicio</NavLink>
         
         <Routes>
-                <NavLink to="/" className="navbar-brand">Inicio</NavLink>
                 <Route path="/temperatura" element={<Calculator/> } ></Route>
                 <Route path="/" exact element={
                     <Ejercicios>  
