@@ -14,8 +14,16 @@ function App2() {
   return (
     <Router>
       <div className="Container">
-       <div className="App">      
-        <NavLink to="/" className="btn btn-dark">Inicio</NavLink>
+       <div className="App">   
+        
+        <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
+                    <NavLink to="/" className="navbar-brand">Inicio</NavLink>
+                </div>
+            </nav>
+        </div>   
+        
         <Routes>
                 <Route path="/temperatura" element={<Calculator/> } ></Route>
                 <Route path="/" exact element={
